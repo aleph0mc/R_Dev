@@ -65,3 +65,13 @@ printmessage <- function(x) {
 }
 
 #tapply(mtcars$mpg, mtcars$am, mean)
+
+standardize = function(x) {
+  m = mean(x)
+  std = sd(x)
+  result = (x - m) / std
+  result
+}
+
+test_sample = rnorm(n = 10, mean = 2, sd = 5)
+standardize(x = test_sample)
