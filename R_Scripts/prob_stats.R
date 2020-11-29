@@ -29,10 +29,10 @@ beta_0_hat + beta_1_hat * 8
 # lm function - linear model
 stop_dist_model <- lm(dist ~ speed, data = cars)
 plot(dist ~ speed, data = cars,
-     xlab = "Speed (in Miles Per Hour)",
-     ylab = "Stopping Distance (in Feet)",
-     main = "Stopping Distance vs Speed",
-     pch = 20,
-     cex = 1,
-     col = "grey")
+    xlab = "Speed (in Miles Per Hour)",
+    ylab = "Stopping Distance (in Feet)",
+    main = "Stopping Distance vs Speed",
+    pch = 20,
+    cex = 1,
+    col = "grey")
 abline(stop_dist_model, lwd = 3, col = "darkorange")
